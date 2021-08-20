@@ -2,7 +2,7 @@
 
 NRT_REPO=${TARGET_REPO:-https://github.com/icpac-igad/nrt-scripts.git}
 NRT_DIR=$(basename $NRT_REPO .git)
-LOG=udp://logs2.papertrailapp.com:24988
+LOG=${LOG:-udp://localhost}
 
 # fetch repo
 echo "pulling repository"

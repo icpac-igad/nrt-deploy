@@ -6,6 +6,8 @@ services:
         context: .
       container_name: nrt_deploy
       restart: ${RESTART_POLICY}
+      env_file:
+        - .env
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
         - ./data:/opt/nrt-script/data
