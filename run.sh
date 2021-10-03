@@ -1,1 +1,3 @@
-docker-compose build && docker-compose up -d
+docker-compose build
+
+CURRENT_UID=$(id -u) docker-compose up --force-recreate
