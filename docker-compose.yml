@@ -10,5 +10,6 @@ services:
       - .env
     environment:
       - CURRENT_UID=${CURRENT_UID}
+      - TZ="Africa/Nairobi"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
